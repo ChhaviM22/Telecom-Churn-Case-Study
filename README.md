@@ -1,6 +1,6 @@
 # Telecom-Churn-Case-Study
-Problem Statement
-Business Problem Overview
+# Problem Statement
+# Business Problem Overview
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 
 For many incumbent operators, retaining high profitable customers is the number one business goal.
@@ -9,7 +9,7 @@ To reduce customer churn, telecom companies need to predict which customers are 
 
 In this project, we will analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.
 
-Understanding and Defining Churn
+# Understanding and Defining Churn
 There are two main models of payment in the telecom industry - postpaid (customers pay a monthly/annual bill after using the services) and prepaid (customers pay/recharge with a certain amount in advance and then use the services).
 
 In the postpaid model, when customers want to switch to another operator, they usually inform the existing operator to terminate the services, and we directly know that this is an instance of churn.
@@ -20,7 +20,7 @@ Thus, churn prediction is usually more critical (and non-trivial) for prepaid cu
 
 This project is based on the Indian and Southeast Asian market.
 
-Definitions of Churn
+# Definitions of Churn
 There are various ways to define churn, such as:
 
 Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue’.
@@ -54,12 +54,6 @@ The ‘churn’ phase: In this phase, the customer is said to have churned. We d
 
 In this case, since we are working over a four-month window, the first two months are the ‘good’ phase, the third month is the ‘action’ phase, while the fourth month is the ‘churn’ phase.
 
-Dataset and Data Dictionary
-The dataset can be downloaded from here.
-
-Data dictionary is uploaded. The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc.
-
-The attributes containing 6, 7, 8, 9 as suffixes imply that those correspond to the months 6, 7, 8, 9 respectively.
 
 Data Preparation
 The following data preparation steps are crucial for this problem:
@@ -76,7 +70,7 @@ vol_2g_mb_9
 vol_3g_mb_9
 After tagging churners, we need to remove all the attributes corresponding to the churn phase (all attributes having ‘ _9’, etc. in their names).
 
-Modelling
+# Modelling
 Build models to predict churn. The predictive model that we are going to build will serve two purposes:
 
 It will be used to predict whether a high-value customer will churn or not, in near future (i.e. churn phase). By knowing this, the company can take action steps such as providing special plans, discounts on recharge etc.
